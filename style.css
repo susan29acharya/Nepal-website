@@ -1,0 +1,433 @@
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+#first-page {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('images/back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction:row ;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* position: sticky; */
+}
+
+.nepal-logo {
+    display: flex;
+    margin-right: 0%;
+    width: 40%;
+}
+
+.nepal-logo img {
+    padding-left: 2%;
+    height: 10vh;
+    width: 55px;
+}
+
+.nepal-logo h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    padding-left: 4%;
+    color: white;
+    position: relative;
+    top: 8px;
+    letter-spacing: 8px;
+    text-shadow: 0px 1px 0px black;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    width: 70%;
+    margin-left: 22%;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: #fff724;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0px 1px 0px black;
+    position: relative;
+}
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border-radius: 4px;
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.6s ease;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+/*main section*/
+.main-head {
+    text-align: center;
+    padding-top: 15%;
+}
+
+.main-head h2 {
+    font-size: 65px;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 1%;
+    text-shadow: 0px 1px 0px black;
+}
+
+.main-head p {
+    font-size: 30px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff724;
+    text-shadow: 0px 1px 0px black;
+}
+
+span {
+    color: white;
+    
+}
+
+.button {
+    padding-top: 7%;
+}
+
+.button button {
+    font-size: 20px;
+    padding: 4px 16px;
+    transition: 0.5s ease;
+    background-color: transparent;
+    border: none;
+}
+
+.button button a {
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    color: #fff724;
+    letter-spacing: 2px;
+}
+
+.button button a::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -12%;
+    transition: 0.5s ease;
+}
+
+.button button a:hover::after {
+    width: 100%;
+}
+
+/*------------------------------end of first page-------------------------------------------*/
+
+#second-page {
+    height: 200vh;
+    width: 100%;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('images/destination.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0.1%;
+}
+.destination{
+    padding-top: 1%;
+}
+.destination h1{
+    color: #fff724;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-shadow: 0px 1px 0px black;
+    padding-bottom: 2%;
+    
+}
+.container{
+    height: 180vh;
+    width: 100%;
+}
+.flex-box,.flex-box2,.flex-box3,.flex-box4{
+    height: 45vh;
+    width: 56%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 0.1%;
+}
+.flex-box,.flex-box2,.flex-box3,.flex-box4 p{
+    color: white;
+    font: 20px;
+}
+.flex-box2,.flex-box4{
+    float: right;
+    margin-right: 1%;
+}
+.anchor{
+    flex: none;
+    height: 40vh;
+    width: 45%;
+    margin-left: 1%;
+}
+.par p{
+    text-align: justify;
+    padding-bottom: 6%;
+    font-size: 17.5px;
+}
+.par h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff724;
+    padding-bottom: 5%;
+}
+.image{
+    height:42vh ;
+    width: 55%;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 3%;
+    margin-right: 1%;
+    transition: 0.5s ease;
+}
+.image img{
+    height: 41.2vh;
+    width: 100%;
+}
+.image:hover{
+    border: 2px solid #f9004d;
+}
+.paragraph-more{
+    text-align: center;
+}
+.paragraph-more a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f9004d;
+    letter-spacing: 1px;
+    font-size: 15px;
+    position: relative;
+}
+.paragraph-more a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff724;
+    height: 2px;
+    width:0;
+    left: 0;
+    bottom: -15%;
+    transition: 0.5s ease;
+}
+.paragraph-more a:hover::after{
+    width: 100%;
+}
+/*------------------------------end of second page-------------------------------------------*/
+
+#third-page{
+    height: 100vh;
+    width: 100%;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('images/history1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0.1%;
+}
+.history h1{
+    color: #fff724;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-shadow: 0px 1px 0px black;
+    padding-top: 1%;
+    padding-bottom:0.5%;
+}
+.container2{
+    display: flex;
+
+}
+.history-paragraph{
+    height: 90vh;
+    width: 75%;
+}
+.history-paragraph h2{
+    color: rgb(247, 228, 26);
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-shadow: 0px 1px 0px black;
+    padding-top: 1%;
+    padding-bottom:0.5%;
+    padding-left: 3px;
+}
+.history-paragraph p{
+    color: white;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.history-more{
+    padding-left: 45%;
+    padding-top: 2%;
+}
+.history-more a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f9004d;
+    letter-spacing: 1px;
+    font-size: 15px;
+    position: relative;
+}
+.history-more a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff724;
+    height: 2px;
+    width:0;
+    left: 0;
+    bottom: -15%;
+    transition: 0.5s ease;
+}
+.history-more a:hover::after{
+    width: 100%;
+}
+.history-images{
+    height: 90vh;
+    width: 25%;
+}
+.image-box{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1%;
+}
+.image-box img{
+    height: 27.5vh;
+    width:99%;
+    /* border: 2px solid white; */
+    margin-bottom: 1%;
+    margin-top: 3%;
+}
+/*------------------------------end of third page-------------------------------------------*/
+
+
+#last-page{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('images/about.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0.1%;
+}
+#last-page h1{
+    color: #fff724;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-shadow: 0px 1px 0px black;
+    padding-bottom: 0.5%;
+}
+.about-flex{
+    display: flex;
+}
+.about-paragraph{
+    height: 90vh;
+    width: 70%;
+}
+.about-paragraph p{
+    color: white;
+    text-transform: capitalize;
+    text-align: justify;
+    letter-spacing: 1px;
+    padding-left: 5px;
+    padding-right: 3px;
+    padding-top: 3%;
+}
+.about-more-more{
+    padding-left: 45%;
+    padding-top: 2%;
+}
+.about-more-more a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff724;
+    letter-spacing: 1px;
+    font-size: 15px;
+    position: relative;
+}
+.about-more-more a::after{
+    content: "";
+    position: absolute;
+    background-color:white ;
+    height: 2px;
+    width:0;
+    left: 0;
+    bottom: -15%;
+    transition: 0.5s ease;
+}
+.about-more-more a:hover::after{
+    width: 100%;
+}
+.more-about{
+    height: 90vh;
+    width: 30%;
+}
+.more-about img{
+    height: 35vh;
+    width: 75%;
+    /* border: 2px solid white; */
+    margin-left: 13%;
+    margin-top: 5%;
+}
+.more-about p{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+}
+
