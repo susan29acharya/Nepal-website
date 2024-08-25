@@ -18,36 +18,39 @@ body{
 }
 
 .nav {
-    height: 10vh;
+    height: 9vh;
     width: 90%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction:row ;
     border-radius: 4px;
     margin-left: 5%;
-    margin-bottom: 2%;
     margin-top: 1.5%;
     border-bottom: 1px solid rgba(128, 128, 128, 0.329);
 }
-
+.nav i{
+    font-size: 2vw;
+    display: none;
+}
 .nepal-logo {
     display: flex;
-    margin-right: 0%;
-    width: 40%;
+    justify-content: center;
+    align-items: center;
 }
 
 .nepal-logo img {
     padding-left: 2%;
-    height: 7vh;
-    width: 40px;
+    height: 3vw;
+    width: 3vw;
 }
 
 .nepal-logo h1 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 2vw;
     padding-left: 4%;
     color: black;
     position: relative;
-    top: 8px;
     letter-spacing: 8px;
     font-family: "Playwrite AR", cursive;
 }
@@ -68,7 +71,7 @@ ul li {
 ul li a {
     color: #f9004d;
     text-decoration: none;
-    font-size: 19.5px;
+    font-size: 1.5vw;
     text-transform: capitalize;
     letter-spacing: 2px;
     font-family: "Barlow Condensed", sans-serif;
@@ -81,11 +84,12 @@ ul li a:hover {
 
 /*main section*/
 .main-head {
-    height: 80vh;
+    height:90vh;
     width: 85%;
     margin-left: 7.5%;
     text-align: center;
     padding-top: 15%;
+    margin-top: 1%;
     border-radius: 20px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('images/back.png');
     background-position: center;
@@ -107,7 +111,7 @@ ul li a:hover {
 }
 
 .main-head h2 {
-    font-size: 55px;
+    font-size: 5vw;
     letter-spacing: 4px;
     word-spacing: 3px;
     text-transform: capitalize;
@@ -118,7 +122,7 @@ ul li a:hover {
 }
 
 .main-head p {
-    font-size: 21px;
+    font-size: 2vw;
     letter-spacing: 1px;
     word-spacing: 2px;
     text-transform: capitalize;
@@ -136,7 +140,7 @@ span {
 }
 
 .button button {
-    font-size: 17px;
+    font-size: 1.5vw;
     padding: 4px 16px;
     transition: 0.5s ease;
     background-color: transparent;
@@ -517,5 +521,103 @@ span {
     color: #f9004d;
     text-align: center;
     font-family: "Barlow Condensed", sans-serif;
+}
+
+@media (max-width: 600px) {
+    .nav{
+        padding: 0vw 2vw;
+    }
+    .nav i{
+        font-size: 4vw;
+        display: inline-block;
+        color: black;
+    }
+    .nepal-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nepal-logo img {
+        padding-left: 1vw;
+        height: 6vw;
+        width: 6vw;
+    }
+    
+    .nepal-logo h1 {
+        text-transform: uppercase;
+        font-size: 4vw;
+        padding-left: 2vw;
+        color: black;
+        position: relative;
+        letter-spacing: 8px;
+        font-family: "Playwrite AR", cursive;
+    }
+    
+    ul {
+        display:none;
+    }
+    .main-head h2 {
+        font-size: 6vw;
+        letter-spacing: 4px;
+        word-spacing: 3px;
+        text-transform: capitalize;
+        color: white;
+        padding-bottom: 5vw;
+        font-family: "Playwrite AR", cursive;
+    }
+    
+    .main-head p {
+        font-size: 3.5vw;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+        font-family: "Barlow Condensed", sans-serif;
+        color: #fff724;
+    }
+    
+    span {
+        color: white;
+        font-family: "Barlow Condensed", sans-serif;
+    }
+    
+    .button {
+        padding-top: 15vw;
+    }
+    
+    .button button {
+        font-size: 2.7vw;
+        padding: 4px 16px;
+        transition: 0.5s ease;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .button button a {
+        text-decoration: none;
+        cursor: pointer;
+        text-transform: capitalize;
+        position: relative;
+        color: #fff724;
+        letter-spacing: 2px;
+        font-family: "Barlow Condensed", sans-serif;
+    }
+    
+    .button button a::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        height: 1px;
+        width: 0;
+        left: 0;
+        bottom: -12%;
+        transition: 0.5s ease;
+    }
+    
+    .button button a:hover::after {
+        width: 100%;
+    }
+    
+    
 }
 
