@@ -84,7 +84,7 @@ ul li a:hover {
 
 /*main section*/
 .main-head {
-    height:90vh;
+    height:85vh;
     width: 85%;
     margin-left: 7.5%;
     text-align: center;
@@ -178,7 +178,7 @@ span {
     height: 200vh;
     width: 90%;
     margin-left: 5%;
-    margin-top: -2%;
+    margin-top: 2%;
     margin-bottom: 10%;
 }
 
