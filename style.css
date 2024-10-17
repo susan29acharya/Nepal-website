@@ -109,7 +109,11 @@ ul li a:hover {
         scale: 1;
     }
 }
-
+.main-head iframe{
+    position: absolute;
+    height: 85vh;
+    width: 100%;
+}
 .main-head h2 {
     font-size: 5vw;
     letter-spacing: 4px;
@@ -320,9 +324,11 @@ span {
 
 }
 .history-paragraph{
-    height: 90vh;
-    width: 70%;
-    margin-right: 5%;
+    height: 70vh;
+    width: 65%;
+    margin-right: 1%;
+    margin-top: 7%;
+    margin-right: 3%;
     animation: history linear;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
@@ -343,8 +349,14 @@ span {
         transform: translateX(0px);
     }
 }
+.history-paragraph iframe{
+    margin-left: 20%;
+    height: 70vh;
+    width: 100%;
+    margin-left: 0%;
 
-.history-paragraph p{
+}
+.image-box p{
     color: #191919;
     letter-spacing: 1px;
     text-align: justify;
@@ -354,8 +366,7 @@ span {
     font-family: "Barlow Condensed", sans-serif;
 }
 .history-more{
-    padding-left: 45%;
-    padding-top: 2%;
+    padding-top: 10%;
 }
 .history-more a{
     text-decoration: none;
@@ -380,8 +391,9 @@ span {
     width: 100%;
 }
 .history-images{
-    height: 90vh;
-    width: 25%;
+    height: 60vh;
+    width: 35%;
+    margin-top: 10%  ;
 }
 .image-box{
     display: flex;
