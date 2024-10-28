@@ -1,0 +1,44 @@
+/* @media screen and (max-width: 991px) {
+   
+    #second-page {
+        height: 215vh;
+    }
+    .flex-box,.flex-box2,.flex-box3,.flex-box4{
+        height: 70vh;
+        width: 70%;
+    }
+
+} */
+@media screen and (max-width:479px) {
+    .flex-box,.flex-box2,.flex-box3,.flex-box4{
+        height: 90vh;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .anchor{
+        flex: none;
+        height: 30vh;
+        width: 100%;
+        padding: 0px 5px 0px 5px;
+        border: 1px solid red;
+    }
+    .par h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .par p{
+        font-size: 14px;
+    }
+    .image{
+        height:50vh ;
+        width: 94%;
+        
+        border: 1px solid red;
+    }
+    .image img{
+        height: 49.5vh;
+    }
+    .paragraph-more{
+        display: none;
+    }
+}
